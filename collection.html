@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nostra - Collections</title>
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+          rel="stylesheet">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ========================= -->
+<!-- NAVBAR -->
+<!-- ========================= -->
+
+<nav class="navbar">
+
+    <h1>Nostra</h1>
+
+
+    <div class="navbar-links">
+
+        <p class="navbar-link">
+
+            <a href="index.html">
+                Home
+            </a>
+
+        </p>
+
+
+        <p class="navbar-link">
+
+            <a href="collection.html">
+                Collections
+            </a>
+
+        </p>
+
+
+        <p class="navbar-link">
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </p>
+
+
+        <p class="navbar-link">
+
+            <a href="orders.html">
+                My Orders
+            </a>
+
+        </p>
+
+
+        <p class="navbar-link">
+
+            <a href="cart.html">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Cart
+                (<span id="cartCount">0</span>)
+
+            </a>
+
+        </p>
+
+    </div>
+
+
+    <div class="navbar-menu-toggle"
+         onclick="showNavbar()">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </div>
+
+</nav>
+
+
+<!-- ========================= -->
+<!-- SIDE NAVBAR -->
+<!-- ========================= -->
+
+<div class="side-navbar">
+
+
+    <p style="text-align:right;"
+       onclick="closeNavbar()">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </p>
+
+
+    <div class="side-navbar-links">
+
+
+        <p class="side-navbar-link">
+
+            <a href="index.html">
+                Home
+            </a>
+
+        </p>
+
+
+        <p class="side-navbar-link">
+
+            <a href="collection.html">
+                Collections
+            </a>
+
+        </p>
+
+
+        <p class="side-navbar-link">
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </p>
+
+
+        <p class="side-navbar-link">
+
+            <a href="orders.html">
+                My Orders
+            </a>
+
+        </p>
+
+
+        <p class="side-navbar-link">
+
+            <a href="cart.html">
+
+                Cart
+                (<span id="mobileCartCount">0</span>)
+
+            </a>
+
+        </p>
+
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- COLLECTION -->
+<!-- ========================= -->
+
+<div class="product-section">
+
+
+    <!-- SEARCH -->
+
+    <form class="product-search"
+          onsubmit="return false;">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search products">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+    </form>
+
+
+    <!-- ADD PRODUCT -->
+
+    <div class="add-product-section">
+
+        <h2>Add New Product</h2>
+
+
+        <input
+            type="text"
+            id="productName"
+            placeholder="Product Name">
+
+
+        <input
+            type="number"
+            id="productPrice"
+            placeholder="Price">
+
+
+        <input
+            type="text"
+            id="productImage"
+            placeholder="Image file name">
+
+
+        <input
+            type="text"
+            id="productDescription"
+            placeholder="Description">
+
+
+        <select id="productCategory">
+
+            <option value="">
+                Select Category
+            </option>
+
+            <option value="Women">
+                Women
+            </option>
+
+            <option value="Men">
+                Men
+            </option>
+
+            <option value="Kids">
+                Kids
+            </option>
+
+        </select>
+
+
+        <button onclick="addProduct()">
+            Add Product
+        </button>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+
+    <div class="products"
+         id="products">
+
+        <!-- Products will come from Spring Boot -->
+
+    </div>
+
+
+</div>
+
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<div class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box-1">
+
+            <h2>Nostra</h2>
+
+            <p>
+                Shop the latest fashion collections
+                at Nostra.
+            </p>
+
+
+            <div class="footer-icon-container">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-twitter"></i>
+
+                <i class="fa-brands fa-facebook"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+        @ 2024 Nostra.com
+    </p>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================= -->
+
+<script src="navbar.js"></script>
+
+<script src="cart-count.js"></script>
+
+<script src="collection.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nostra - Cart</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+          rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+
+    <!-- Main CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ========================= -->
+<!-- NAVBAR -->
+<!-- ========================= -->
+
+<nav class="navbar">
+
+    <h1>Nostra</h1>
+
+
+    <div class="navbar-links">
+
+        <p class="navbar-link">
+            <a href="index.html">
+                Home
+            </a>
+        </p>
+
+
+        <p class="navbar-link">
+            <a href="collection.html">
+                Collections
+            </a>
+        </p>
+
+
+        <p class="navbar-link">
+            <a href="contact.html">
+                Contact
+            </a>
+        </p>
+
+
+        <p class="navbar-link">
+            <a href="cart.html">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Cart
+                (<span id="cartCount">0</span>)
+
+            </a>
+        </p>
+
+
+        <p class="navbar-link">
+            <a href="orders.html">
+                My Orders
+            </a>
+        </p>
+
+    </div>
+
+
+    <!-- Mobile Menu -->
+
+    <div class="navbar-menu-toggle"
+         onclick="showNavbar()">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ========================= -->
+<!-- SIDE NAVBAR -->
+<!-- ========================= -->
+
+<div class="side-navbar">
+
+
+    <p style="text-align: right;"
+       onclick="closeNavbar()">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </p>
+
+
+    <div class="side-navbar-links">
+
+
+        <p class="side-navbar-link">
+            <a href="index.html">
+                Home
+            </a>
+        </p>
+
+
+        <p class="side-navbar-link">
+            <a href="collection.html">
+                Collections
+            </a>
+        </p>
+
+
+        <p class="side-navbar-link">
+            <a href="contact.html">
+                Contact
+            </a>
+        </p>
+
+
+        <p class="side-navbar-link">
+            <a href="cart.html">
+                Cart
+            </a>
+        </p>
+
+
+        <p class="side-navbar-link">
+            <a href="orders.html">
+                My Orders
+            </a>
+        </p>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ========================= -->
+<!-- CART SECTION -->
+<!-- ========================= -->
+
+<div class="cart-section">
+
+
+    <h1>Your Cart</h1>
+
+
+    <div id="cartContainer">
+
+        <!-- Products will be displayed here -->
+
+    </div>
+
+
+    <!-- CART TOTAL -->
+
+    <div class="cart-total">
+
+
+        <h2>
+
+            Total:
+            ₹<span id="cartTotal">0</span>
+
+        </h2>
+
+
+        <button onclick="checkout()">
+
+            Checkout
+
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<div class="footer">
+
+
+    <div class="footer-container">
+
+
+        <div class="footer-box-1">
+
+
+            <h2>Nostra</h2>
+
+
+            <p>
+
+                Shop the latest fashion collections
+                at Nostra.
+
+            </p>
+
+
+            <div class="footer-icon-container">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-twitter"></i>
+
+                <i class="fa-brands fa-facebook"></i>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <p>
+
+        @ 2024 Nostra.com
+
+    </p>
+
+
+</div>
+
+
+
+<!-- ========================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================= -->
+
+<script src="navbar.js"></script>
+
+<script src="cart-count.js"></script>
+
+<script src="cart.js"></script>
+
+
+</body>
+
+</html>
